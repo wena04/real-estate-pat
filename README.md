@@ -1,32 +1,33 @@
 # Patricia Wen — Real Estate Website
 
 A single-page marketing site for **Patricia Wen** (Keller Williams North Seattle): hero, value props, about, featured listings and sales (carousel, tables, activity map), reviews, and contact including WeChat QR.
+testing
 
 ---
 
 ## Tech stack
 
-| Layer | Technology |
-|-------|------------|
-| Framework | React 19 + Vite 8 |
-| Routing | React Router 7 (`BrowserRouter` + `basename` for GitHub Pages) |
-| UI | React Bootstrap 2 + Bootstrap 5 |
-| Icons | react-icons (Feather + Tabler, etc.) |
-| Map | Leaflet + react-leaflet (lazy-loaded) |
-| Email | Optional: Resend via `api/inquiry.js` (Vercel serverless) |
+| Layer     | Technology                                                     |
+| --------- | -------------------------------------------------------------- |
+| Framework | React 19 + Vite 8                                              |
+| Routing   | React Router 7 (`BrowserRouter` + `basename` for GitHub Pages) |
+| UI        | React Bootstrap 2 + Bootstrap 5                                |
+| Icons     | react-icons (Feather + Tabler, etc.)                           |
+| Map       | Leaflet + react-leaflet (lazy-loaded)                          |
+| Email     | Optional: Resend via `api/inquiry.js` (Vercel serverless)      |
 
 ---
 
 ## Page sections
 
-| # | Section | Anchor |
-|---|---------|--------|
-| 1 | Hero | `#home` |
-| 2 | Value props (under hero) | — |
-| 3 | Meet Patricia | `#about` |
-| 4 | Featured listings & sales | `#listings` |
-| 5 | Client reviews | `#reviews` |
-| 6 | Contact | `#contact` |
+| #   | Section                   | Anchor      |
+| --- | ------------------------- | ----------- |
+| 1   | Hero                      | `#home`     |
+| 2   | Value props (under hero)  | —           |
+| 3   | Meet Patricia             | `#about`    |
+| 4   | Featured listings & sales | `#listings` |
+| 5   | Client reviews            | `#reviews`  |
+| 6   | Contact                   | `#contact`  |
 
 ---
 
@@ -49,10 +50,10 @@ npm run lint
 
 ## Content & data
 
-| File | Purpose |
-|------|---------|
+| File                        | Purpose                                                                   |
+| --------------------------- | ------------------------------------------------------------------------- |
 | `src/data/siteContent.json` | Copy, hero, brand, about, reviews, listings section text, contact, footer |
-| `src/data/listings.json` | For-sale and sold rows (carousel, tables, map lat/lng) |
+| `src/data/listings.json`    | For-sale and sold rows (carousel, tables, map lat/lng)                    |
 
 Brand assets under `public/assets/brand/` can be regenerated from the 3-up logo plate with:
 
@@ -78,8 +79,8 @@ That almost always means the site was built with the **wrong Vite `base`**. This
 
 **Deploy from the `gh-pages` branch (no GitHub Actions required)**
 
-1. **Repo → Settings → Pages → Build and deployment → Source:** **Deploy from a branch** (not GitHub Actions).  
-2. **Branch:** `gh-pages`, folder **`/ (root)`**. GitHub will **serve** whatever is on that branch at your Pages URL; nothing runs the Vite build on GitHub’s side unless you add a workflow yourself.  
+1. **Repo → Settings → Pages → Build and deployment → Source:** **Deploy from a branch** (not GitHub Actions).
+2. **Branch:** `gh-pages`, folder **`/ (root)`**. GitHub will **serve** whatever is on that branch at your Pages URL; nothing runs the Vite build on GitHub’s side unless you add a workflow yourself.
 3. When you change the site on **`main`**, publish the built output from your machine:
 
    ```bash
@@ -139,8 +140,8 @@ Static files live under `public/` (e.g. `public/assets/hero-seattle-skyline.png`
 
 Values are driven by `src/data/siteContent.json` — update there, not only in this README.
 
-- **Agent:** Patricia Wen  
-- **Office:** Keller Williams North Seattle  
+- **Agent:** Patricia Wen
+- **Office:** Keller Williams North Seattle
 
 ---
 
