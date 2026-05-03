@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:gh-pages": "vite build --base /real-estate-pat/",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:gh-pages": "vite preview --base /real-estate-pat/"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
