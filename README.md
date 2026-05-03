@@ -75,22 +75,11 @@ If the tab title loads but the screen is **empty**, open **DevTools → Network*
 
 That almost always means the site was built with the **wrong Vite `base`**. This app is meant to live under a **path** such as `https://anthonywen.dev/real-estate-pat/`, so the JS bundle must be requested as `/real-estate-pat/assets/...`, not `/assets/...`.
 
-**Typical cause:** GitHub Pages is set to **Deploy from a branch** (`gh-pages`), but that branch was published with a normal `npm run build`, which uses `base: '/'`.
+**Typical cause:** The production build used the **wrong Vite `base`** (for example `base: '/'` while the site is served from `/real-estate-pat/`).
 
-**Deploy from the `gh-pages` branch (no GitHub Actions required)**
+**GitHub Pages (this repo)** — **Settings → Pages → Source: GitHub Actions**. Pushes to **`main`** run `.github/workflows/deploy-github-pages.yml`, which runs `npm run build` with `GITHUB_PAGES=true` so `vite.config.js` sets `base` from `GITHUB_REPOSITORY` (e.g. `/real-estate-pat/`).
 
-1. **Repo → Settings → Pages → Build and deployment → Source:** **Deploy from a branch** (not GitHub Actions).
-2. **Branch:** `gh-pages`, folder **`/ (root)`**. GitHub will **serve** whatever is on that branch at your Pages URL; nothing runs the Vite build on GitHub’s side unless you add a workflow yourself.
-3. When you change the site on **`main`**, publish the built output from your machine:
-
-   ```bash
-   npm install
-   npm run deploy:gh-pages
-   ```
-
-   That runs **`npm run build:gh-pages`** (correct `base` for `/real-estate-pat/`) and pushes the **contents of `dist/`** to the **`gh-pages`** branch using [gh-pages](https://github.com/tschaub/gh-pages). Wait a minute, then hard-refresh the live site.
-
-If your live URL path is not `/real-estate-pat/`, edit the `build:gh-pages` script in `package.json` so `--base` matches your path (e.g. `/my-repo/`).
+If your live URL path is not `/real-estate-pat/`, set `GITHUB_REPOSITORY` correctly on GitHub, or use `npm run build:gh-pages` / `VITE_BASE_PATH` locally so `--base` matches your path (e.g. `/my-repo/`).
 
 **Sanity check locally:**
 
