@@ -76,16 +76,20 @@ That almost always means the site was built with the **wrong Vite `base`**. This
 
 **Typical cause:** GitHub Pages is set to **Deploy from a branch** (`gh-pages`), but that branch was published with a normal `npm run build`, which uses `base: '/'`.
 
-**Fix (pick one):**
+**Deploy from the `gh-pages` branch (no GitHub Actions required)**
 
-1. **Recommended — GitHub Actions (matches `main` automatically)**  
-   - **Settings → Pages → Build and deployment → Source:** choose **GitHub Actions** (not “Deploy from a branch”).  
-   - Push to **`main`**. The workflow sets `GITHUB_PAGES=true` so `vite.config.js` uses base `/real-estate-pat/` when `GITHUB_REPOSITORY` is `wena04/real-estate-pat`.
+1. **Repo → Settings → Pages → Build and deployment → Source:** **Deploy from a branch** (not GitHub Actions).  
+2. **Branch:** `gh-pages`, folder **`/ (root)`**. GitHub will **serve** whatever is on that branch at your Pages URL; nothing runs the Vite build on GitHub’s side unless you add a workflow yourself.  
+3. When you change the site on **`main`**, publish the built output from your machine:
 
-2. **Keep “Deploy from branch” (`gh-pages`)**  
-   - From `main`, run **`npm run build:gh-pages`** (same as `vite build --base /real-estate-pat/`).  
-   - Copy everything inside **`dist/`** to the root of the **`gh-pages`** branch and push.  
-   - If the repo or URL path is not `real-estate-pat`, change the `--base` value to match the **first path segment** of your live URL (always with leading and trailing slashes per Vite: `/my-repo/`).
+   ```bash
+   npm install
+   npm run deploy:gh-pages
+   ```
+
+   That runs **`npm run build:gh-pages`** (correct `base` for `/real-estate-pat/`) and pushes the **contents of `dist/`** to the **`gh-pages`** branch using [gh-pages](https://github.com/tschaub/gh-pages). Wait a minute, then hard-refresh the live site.
+
+If your live URL path is not `/real-estate-pat/`, edit the `build:gh-pages` script in `package.json` so `--base` matches your path (e.g. `/my-repo/`).
 
 **Sanity check locally:**
 
@@ -96,9 +100,7 @@ npm run preview:gh-pages
 
 Open the printed `localhost` URL — you should see the full site, not a white page.
 
-**GitHub Actions** (workflow `.github/workflows/deploy-github-pages.yml`): after you switch Pages to **GitHub Actions**, each push to **`main`** builds with `GITHUB_PAGES=true` so `vite.config.js` picks base `/<repo>/` from `GITHUB_REPOSITORY` automatically.
-
-**Local check** (equivalent to the CI build):
+**Local check** (same output as `build:gh-pages` when the repo name matches your URL segment):
 
 ```bash
 GITHUB_PAGES=true GITHUB_REPOSITORY=wena04/real-estate-pat npm run build
