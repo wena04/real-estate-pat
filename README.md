@@ -1,6 +1,6 @@
 # Patricia Wen – Real Estate Website
 
-A modern, single-page real estate website for **Patricia Wen**, Keller Williams North Seattle agent serving buyers and sellers across the Puget Sound.
+This is a modern, single-page real estate website for **Patricia Wen**, Keller Williams North Seattle agent serving buyers and sellers across the Puget Sound.
 
 ![Website preview](https://github.com/user-attachments/assets/dbb86866-c13e-4e50-b995-44170a0518e6)
 
@@ -8,28 +8,28 @@ A modern, single-page real estate website for **Patricia Wen**, Keller Williams 
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 19 + Vite 8 |
-| Routing | React Router DOM 7 |
-| UI | React Bootstrap 2 + Bootstrap 5 |
-| Icons | react-icons/fi |
-| Map | Leaflet + react-leaflet (lazy-loaded) |
-| Email | Resend (serverless API function) |
-| Hosting | Vercel (recommended) |
+| Layer     | Technology                            |
+| --------- | ------------------------------------- |
+| Framework | React 19 + Vite 8                     |
+| Routing   | React Router DOM 7                    |
+| UI        | React Bootstrap 2 + Bootstrap 5       |
+| Icons     | react-icons/fi                        |
+| Map       | Leaflet + react-leaflet (lazy-loaded) |
+| Email     | Resend (serverless API function)      |
+| Hosting   | Vercel (recommended)                  |
 
 ---
 
 ## Page Sections
 
-| # | Section | Anchor |
-|---|---------|--------|
-| 1 | Hero | `#home` |
-| 2 | Value props (under hero) | — |
-| 3 | Meet Patricia | `#about` |
-| 4 | Featured listings & sales (carousel, tables, map) | `#listings` |
-| 5 | Reviews | `#reviews` |
-| 6 | Contact | `#contact` |
+| #   | Section                                           | Anchor      |
+| --- | ------------------------------------------------- | ----------- |
+| 1   | Hero                                              | `#home`     |
+| 2   | Value props (under hero)                          | —           |
+| 3   | Meet Patricia                                     | `#about`    |
+| 4   | Featured listings & sales (carousel, tables, map) | `#listings` |
+| 5   | Reviews                                           | `#reviews`  |
+| 6   | Contact                                           | `#contact`  |
 
 ---
 
@@ -68,13 +68,13 @@ Place media files in `public/assets/`:
 
 \`\`\`
 public/assets/
-  video/
-    hero.mp4          # hero background video
-    hero-poster.jpg   # poster frame shown before video loads
-  projects/
-    *.jpg             # property thumbnails (paths referenced in listings.json)
-  logo/
-    kw-logo.svg       # Keller Williams logo
+video/
+hero.mp4 # hero background video
+hero-poster.jpg # poster frame shown before video loads
+projects/
+\*.jpg # property thumbnails (paths referenced in listings.json)
+logo/
+kw-logo.svg # Keller Williams logo
 \`\`\`
 
 ---
