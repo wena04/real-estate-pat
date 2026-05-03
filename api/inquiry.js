@@ -61,7 +61,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         // Replace the 'from' domain with a Resend-verified sender domain before deploying.
         from: 'Patricia Wen Site <noreply@patriciawen.kw.com>',
-        to: ['pwen@kw.com'],
+        to: ['patriciarwen@gmail.com'],
         subject: `[${source}] New inquiry from ${name}`,
         html,
         reply_to: email,

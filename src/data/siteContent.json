@@ -1,117 +1,150 @@
 {
+  "brand": {
+    "tagline": "Seattle area residential real estate",
+    "logoSrc": "/assets/brand/patricia-wen-logo-dark.png",
+    "logoAlt": "Patricia Wen — Seattle residential real estate"
+  },
   "agent": {
     "name": "Patricia Wen",
-    "phone": "(206) 619-2199",
-    "email": "pwen@kw.com",
+    "pronouns": "She/Her/Hers",
+    "phone": "(206) 619-0217",
+    "email": "patriciarwen@gmail.com",
     "wechat": "Realtor-Patricia",
     "office": "Keller Williams North Seattle",
     "address": "10700 Meridian Ave N #100, Seattle, WA 98133"
   },
+  "performanceStats": {
+    "salesLast12Months": "8",
+    "totalSales": "90",
+    "priceRange": "$440K–$3.4M",
+    "averagePrice": "$1.3M"
+  },
   "hero": {
-    "headline": "Building the Future of Puget Sound — One Infill at a Time",
-    "subheadline": "From Seattle backyards to ADUs and small multifamily, Patricia Wen helps homeowners and investors unlock hidden value in Northwest real estate.",
-    "ctaHomeowners": "Explore Your Options",
-    "ctaInvestors": "Partner With Us"
+    "imageSrc": "/assets/hero-seattle-skyline.png",
+    "imageAlt": "Seattle skyline at golden hour with the Space Needle and Mount Rainier",
+    "eyebrow": "Seattle area residential real estate",
+    "headline": "Elevated living in Seattle",
+    "subheadline": "Helping you buy, sell, and move with confidence in neighborhoods across Seattle and the Eastside.",
+    "ctaPrimary": "View listings",
+    "ctaSecondary": "Get in touch"
   },
   "values": [
     {
       "icon": "FiHome",
-      "title": "Local Expertise",
-      "body": "Deep knowledge of Seattle neighborhoods, zoning codes, and infill development opportunities."
+      "title": "Local expertise",
+      "body": "Neighborhood knowledge, pricing trends, and what makes each pocket of the region distinct."
     },
     {
-      "icon": "FiTrendingUp",
-      "title": "Investor-Focused",
-      "body": "Data-driven analysis and transparent reporting so your capital works smarter."
+      "icon": "TbDiamond",
+      "title": "Full-service care",
+      "body": "Careful preparation, clear communication, and attention to detail from first conversation through closing."
     },
     {
       "icon": "FiUsers",
-      "title": "Community First",
-      "body": "We build projects that add density thoughtfully and improve neighborhoods."
+      "title": "Trusted advisor",
+      "body": "Honest guidance and steady advocacy so you can make informed decisions at every step."
     },
     {
-      "icon": "FiCheckCircle",
-      "title": "End-to-End Service",
-      "body": "From feasibility through closing—one trusted team handles everything."
-    },
-    {
-      "icon": "FiMessageCircle",
-      "title": "Bilingual Support",
-      "body": "Fluent in English and Mandarin. WeChat: Realtor-Patricia."
+      "icon": "FiKey",
+      "title": "Proven results",
+      "body": "A structured process and years of experience helping buyers and sellers across the Puget Sound."
     }
   ],
-  "proof": [
-    { "stat": "100+", "label": "Units Developed" },
-    { "stat": "50+", "label": "Doors Managed" },
-    { "stat": "#1", "label": "Infill Focus in Seattle" }
-  ],
-  "about": [
-    {
-      "title": "Our Mission",
-      "body": "To create attainable housing and strong returns by unlocking the infill potential of the Puget Sound region."
-    },
-    {
-      "title": "How We Work",
-      "body": "We guide you through feasibility, design, permitting, construction, and sale—always with clear communication and no surprises."
-    },
-    {
-      "title": "The Team",
-      "body": "Patricia Wen leads a network of architects, builders, and lenders—all specializing in Seattle infill and ADU development."
-    }
-  ],
-  "homeownerCards": [
-    {
-      "icon": "FiHome",
-      "title": "ADU & DADU",
-      "body": "Add a detached or attached accessory dwelling unit to increase rental income and property value."
-    },
-    {
-      "icon": "FiLayers",
-      "title": "Lot Split & Infill",
-      "body": "Does your lot qualify for a split or townhome project? We'll run the numbers for you—free."
-    },
-    {
-      "icon": "FiDollarSign",
-      "title": "Sell or Develop?",
-      "body": "Not sure whether to sell as-is or pursue development? We'll model both options with real data."
-    }
-  ],
-  "services": [
-    {
-      "icon": "FiTool",
-      "title": "Design + Build",
-      "body": "Full design-build services for ADUs, townhomes, and small multifamily projects throughout the Seattle metro."
-    },
-    {
-      "icon": "FiBook",
-      "title": "Development Consulting",
-      "body": "Feasibility studies, zoning analysis, pro forma modeling, and permit strategy for your project."
-    },
-    {
-      "icon": "FiClipboard",
-      "title": "Construction Management",
-      "body": "Owner's rep and construction management services to keep your project on schedule and on budget."
-    }
-  ],
-  "investorTiles": [
-    {
-      "icon": "FiBarChart2",
-      "title": "Transparent Reporting",
-      "body": "Monthly investor updates with real-time project metrics, draw schedules, and exit projections."
-    },
-    {
-      "icon": "FiShield",
-      "title": "Risk Management",
-      "body": "Conservative underwriting, contingency planning, and experienced contractor relationships."
-    },
-    {
-      "icon": "FiRefreshCw",
-      "title": "Repeat Opportunities",
-      "body": "Our growing pipeline means priority deal flow for returning capital partners."
-    }
-  ],
+  "aboutSection": {
+    "heading": "Meet Patricia Wen",
+    "subheading": "Your Seattle real estate expert",
+    "portraitSrc": "/assets/patricia-wen-portrait.png",
+    "portraitAlt": "Patricia Wen, real estate broker",
+    "bio": "Patricia Wen is a top-performing real estate agent with Keller Williams North Seattle, known for standout communication and negotiation. Her client-first approach keeps your goals at the center—from pricing and prep through closing.",
+    "credentials": "Ranked in the top 1.5% of U.S. agents by REAL Trends in 2022 and 2023. Twelve years of experience, 90+ closed sales, and a wide range of price points across the Seattle metro. Buyer’s agent, listing agent, relocation, and new construction. Serves Bellevue, Seattle, Kirkland, the Eastside, and surrounding communities. Fluent in English, Mandarin, and Cantonese.",
+    "ctaLabel": "Learn more about me",
+    "pillars": [
+      {
+        "icon": "FiHome",
+        "label": "Buyers & sellers"
+      },
+      {
+        "icon": "FiMapPin",
+        "label": "Seattle & Eastside"
+      },
+      {
+        "icon": "FiHeart",
+        "label": "Client-first service"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Client reviews",
+    "subheading": "Recent five-star feedback from Patricia’s clients (excerpts; full reviews on her public profile).",
+    "aggregateRating": 5,
+    "reviewSummary": "5.0 · 50 reviews on Zillow",
+    "zillowProfileUrl": "https://www.zillow.com/profile/PatriciaWen",
+    "zillowLinkLabel": "See all 50 reviews on Zillow",
+    "footnote": "Reviewer names and transaction details match public Zillow reviews; quotes may be shortened slightly for layout.",
+    "items": [
+      {
+        "quote": "We had a wonderful experience working with Patricia. She was incredibly responsible, responsive, and truly knowledgeable about the market.",
+        "author": "KeruiPeng",
+        "context": "Buyer · Finn Hill, Kirkland",
+        "rating": 5
+      },
+      {
+        "quote": "Patricia is very responsive and knowledgeable. With her well-organized prep, we were able to get an offer one day after listing and close in less than a month.",
+        "author": "chiaotichan",
+        "context": "Seller · Olympic Hills, Seattle",
+        "rating": 5
+      },
+      {
+        "quote": "Pat is an excellent real estate professional. She helped me buy in a challenging market and sell when things calmer—both great outcomes. She organized everything and provided outstanding guidance.",
+        "author": "CY98034",
+        "context": "Buyer & seller · North Juanita, Kirkland",
+        "rating": 5
+      },
+      {
+        "quote": "Patricia shows great ownership handling difficult negotiations as our seller’s agent—professional and able to identify what mattered most.",
+        "author": "William Young",
+        "context": "Seller · Wedgwood, Seattle",
+        "rating": 5
+      },
+      {
+        "quote": "I had an amazing experience working with Patricia Wen. She is an excellent communicator—always timely and efficient—and incredibly dedicated.",
+        "author": "SarahZhang95",
+        "context": "Buyer & seller · Snohomish",
+        "rating": 5
+      },
+      {
+        "quote": "We had a great experience. She was always responsive and reliable, gave honest opinions about each house, and pointed out drawbacks we should consider.",
+        "author": "seren4h",
+        "context": "Buyer · Talus, Issaquah",
+        "rating": 5
+      }
+    ]
+  },
+  "listingsSection": {
+    "heading": "Listings & sales",
+    "profileLine": "Featured listings & sales",
+    "recentSalesTitle": "Recent sales",
+    "viewAllHref": "https://www.zillow.com/profile/PatriciaWen",
+    "viewAllLabel": "See more activity →"
+  },
+  "contactSection": {
+    "heading": "Contact",
+    "subheading": "Schedule a consultation or send a message—Patricia will respond as soon as possible.",
+    "wechatQrSrc": "/assets/wechat-qr-light.png",
+    "wechatQrCaption": "Scan the QR code to add Patricia on WeChat."
+  },
   "footer": {
-    "blurb": "Patricia Wen is a Seattle-based real estate agent and infill developer specializing in ADUs, townhomes, and small multifamily projects across the Puget Sound region.",
-    "navLinks": ["Home", "Homeowners", "Services", "Investors", "Projects", "Contact"]
+    "blurb": "Patricia Wen (she/her) | Seattle area residential real estate. Keller Williams North Seattle. Highly rated on Zillow with 50+ reviews.",
+    "navLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "Listings", "href": "#listings" },
+      { "label": "About", "href": "#about" },
+      { "label": "Reviews", "href": "#reviews" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "extraLinks": [
+      { "label": "Zillow profile", "href": "https://www.zillow.com/profile/PatriciaWen" },
+      { "label": "Instagram & more", "href": "https://linktr.ee/pwhomesinseattle" }
+    ]
   }
 }
