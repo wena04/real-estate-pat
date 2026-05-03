@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import content from '../data/siteContent.json';
 import { NAV_SCROLL_OFFSET } from '../constants';
+import { publicUrl } from '../utils/publicUrl';
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -47,7 +48,7 @@ export default function NavBar() {
         >
           {logoSrc ? (
             <img
-              src={logoSrc}
+              src={publicUrl(logoSrc)}
               alt={logoAlt}
               className="navbar-brand-logo"
               width={640}

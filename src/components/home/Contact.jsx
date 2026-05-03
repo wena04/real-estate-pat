@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import { FiPhone, FiMail, FiMapPin, FiMessageSquare } from 'react-icons/fi';
 import content from '../../data/siteContent.json';
 import { sendInquiry } from '../../api/inquiry';
+import { publicUrl } from '../../utils/publicUrl';
 
 const { agent, contactSection } = content;
 
@@ -52,7 +53,7 @@ export default function Contact() {
                 <h3 className="wechat-primary-title mb-3">WeChat</h3>
                 <div className="wechat-qr-frame mx-auto">
                   <img
-                    src={wechatQrSrc}
+                    src={publicUrl(wechatQrSrc)}
                     alt="WeChat QR code to add Patricia Wen"
                     className="wechat-qr-img wechat-qr-img--hero"
                   />

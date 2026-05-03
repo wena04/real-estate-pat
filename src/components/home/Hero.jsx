@@ -1,9 +1,10 @@
 import content from '../../data/siteContent.json';
 import { NAV_SCROLL_OFFSET } from '../../constants';
+import { publicUrl } from '../../utils/publicUrl';
 
 const { hero, brand } = content;
 
-const DEFAULT_HERO_IMG = '/assets/hero-seattle-skyline.png';
+const DEFAULT_HERO_IMG = publicUrl('/assets/hero-seattle-skyline.png');
 
 export default function Hero() {
   function scrollTo(id) {
@@ -13,7 +14,7 @@ export default function Hero() {
     window.scrollTo({ top, behavior: 'smooth' });
   }
 
-  const src = hero.imageSrc || DEFAULT_HERO_IMG;
+  const src = hero.imageSrc ? publicUrl(hero.imageSrc) : DEFAULT_HERO_IMG;
   const alt =
     hero.imageAlt ||
     'Seattle skyline with the Space Needle and Puget Sound';

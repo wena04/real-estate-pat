@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FiHome, FiMapPin, FiHeart } from 'react-icons/fi';
 import content from '../../data/siteContent.json';
 import { NAV_SCROLL_OFFSET } from '../../constants';
+import { publicUrl } from '../../utils/publicUrl';
 
 const PILLAR_ICONS = { FiHome, FiMapPin, FiHeart };
 
@@ -34,7 +35,7 @@ export default function WhoWeAre() {
           <Col lg={5}>
             <div className="about-portrait-wrap">
               <img
-                src={portraitSrc}
+                src={publicUrl(portraitSrc)}
                 alt={portraitAlt || agent.name}
                 className="about-portrait-img w-100"
               />

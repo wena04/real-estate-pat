@@ -1,11 +1,11 @@
-# Builds the Vite site and publishes the `dist/` folder to GitHub Pages.
-# Repo → Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Optional: deploy via GitHub Actions instead of the `gh-pages` branch.
+# Repo → Settings → Pages → Source: GitHub Actions, and fix the `github-pages`
+# environment rules if deploy is rejected. Primary workflow for this repo is
+# `npm run deploy:gh-pages` from `main` (see README).
 
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

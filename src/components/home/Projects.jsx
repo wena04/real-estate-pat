@@ -9,6 +9,7 @@ import { Container, Row, Col, Table } from 'react-bootstrap';
 import { FiChevronLeft, FiChevronRight, FiStar } from 'react-icons/fi';
 import listingsData from '../../data/listings.json';
 import content from '../../data/siteContent.json';
+import { publicUrl } from '../../utils/publicUrl';
 
 const ListingsMap = lazy(() => import('../ListingsMap'));
 
@@ -125,7 +126,7 @@ export default function Projects() {
               <div className="listings-agent-panel text-center text-lg-start">
                 <div className="listings-agent-photo-ring mx-auto mx-lg-0">
                   <img
-                    src={aboutSection.portraitSrc}
+                    src={publicUrl(aboutSection.portraitSrc)}
                     alt={aboutSection.portraitAlt || agent.name}
                     className="listings-agent-photo"
                   />
@@ -188,7 +189,7 @@ export default function Projects() {
                       <div className="recent-sale-img-wrap">
                         <span className="recent-sale-badge">{p.represented}</span>
                         {p.image ? (
-                          <img src={p.image} alt="" className="recent-sale-img" />
+                          <img src={publicUrl(p.image)} alt="" className="recent-sale-img" />
                         ) : null}
                       </div>
                       <div className="recent-sale-body">
@@ -253,7 +254,7 @@ export default function Projects() {
                     <tr key={p.id}>
                       <td className="listings-table-thumb">
                         {p.image ? (
-                          <img src={p.image} alt="" width={72} height={54} className="rounded-2" />
+                          <img src={publicUrl(p.image)} alt="" width={72} height={54} className="rounded-2" />
                         ) : null}
                       </td>
                       <td>
@@ -293,7 +294,7 @@ export default function Projects() {
                   <tr key={p.id}>
                     <td className="listings-table-thumb">
                       {p.image ? (
-                        <img src={p.image} alt="" width={72} height={54} className="rounded-2" />
+                        <img src={publicUrl(p.image)} alt="" width={72} height={54} className="rounded-2" />
                       ) : null}
                     </td>
                     <td>
